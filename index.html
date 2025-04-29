@@ -7,10 +7,62 @@
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <h1>This is a basic site setup</h1>
-    <p>
-      I am including some lines to ensure that deployment works properly
-    </p>
-  <img src="./imgs/thumbs-up.jpg" alt="thumbs up" width="200" height="200"/>
+    <h1>Beckett Ricks</h1>
+    <h3>About Me</h3>
+    <p>I am blah blah blah</p>
+    <p>I like to use this and that and this</p>
+    <h1>Projects</h1>
+    <div class="project-section">
+      <h2 class="project-header">Prowess Backend</h2>
+      <p class="project-text">
+        This project is part of an internship I did with Prowess, a start-up 
+        I connected with through one of my classes. During my time with Prowess, 
+        I was able to work on new back-end interactions with their products, namely
+        designing a queueing / scoring system to investigate the effectiveness 
+        of matchmaking algorithms we were designing. Below you can find a demonstation
+        of the front end queueing system and associated leaderboard that use these back-end
+        interactions. I also did investigative design work on the algorithms associated with 
+        this system, though I am not at liberty to discuss their specifics.
+      </p>
+      <img class="project-img" src="./visuals/prowess.gif" alt="prowess-demo"/>
+    </div>
+    <div class="project-section">
+      <h2 class="project-header">Reversi AI</h2>
+      <p class="project-text">
+        This project was part of a tournament organized by my artificial intelligence professor. 
+        We were invited to create an AI that would play Reversi, a basic strategy game like checkers
+        that involves randomn elements (the opponents moves) that an AI cannot certainly predict.
+        I designed my AI agent mainly using Monte Carlo Tree Search to evaluate the best decisions while
+        compensating for its opponents uncertain decision. I  wanted to implement a machine learning 
+        element to its decision making that could 'predict' the opponent's best move (something like 
+        Google's AlphaGo) but ran out of time to implement this.
+        I managed to qualify for the top cut of the tournament with this implementation.
+      </p>
+      <img class="project-img" src="./visuals/reversi.gif" alt="reversi-demo"/>
+    </div>
+    <div class="project-section">
+      <h2 class="project-header">Heart Disease Machine Analysis</h2>
+      <p class="project-text">
+        This was a project I did for one of my university courses on machine learning. 
+        For this project, we were tasked with using the variety of machine learning 
+        techniques we learned to analyze a robust, messy dataset. Our group decided to analyze 
+        a dataset revolving around patients with and without heart disease. You can find the
+        whole write-up <a href="./files/heart-disease-write-up.docx" download> here.</a>
+      </p>
+      <img class="project-img" src="./visuals/hr-results.png" alt="hr-results"/>
+    </div>
+    <div class="project-section">
+      <h2 class="project-header">Bayes Filter Agent</h2>
+      <p class="project-text">
+        Another project I did during my artificial intelligence course, this project revolves 
+        around an agent that is trying to get to the end of a maze. Though the agent has an
+        accurate layout of the enviornment, its sensors are not completely accurate in reading
+        its surrounding. It also has a chance of 'misstepping' when it makes moves. To compensate
+        for this, the agent uses a Bayesian filter I implemented to predict where it is based on
+        its readings. The deeper the blue, the more likely the agent thinks it is in that location.
+        The green circle represents its best guess as to where it is.
+      </p>
+      <img class="project-img" src="./visuals/bayes.gif" alt="hr-results"/>
+    </div>
   </body>
 </html>

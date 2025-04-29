@@ -1,3 +1,7 @@
-p {
-  color: red;
+.project-section {
+  width: 50%;
+}
+
+.project-img {
+  max-width: 100%
 }
